@@ -14,7 +14,7 @@ public class Square : IShape
     private readonly ShapeValidator _validator;
     private readonly double _sideLength;
 
-    public double SideLength { get { return _sideLength; } }
+    public double Side { get { return _sideLength; } }
 
     public Square(ShapeValidator validator, double sideLength)
     {

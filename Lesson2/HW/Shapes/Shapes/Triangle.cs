@@ -15,6 +15,10 @@ public class Triangle : IShape
     private readonly double _sideB;
     private readonly double _sideC;
 
+    public double SideA { get { return _sideA; } }
+    public double SideB { get { return _sideB; } }
+    public double SideC { get { return _sideC; } }
+
     public Triangle(TriangleValidator validator, double sideA, double sideB, double sideC)
     {
         _validator = validator;
