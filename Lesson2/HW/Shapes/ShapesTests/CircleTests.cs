@@ -1,4 +1,4 @@
-using Shapes;
+Ôªøusing Shapes;
 using Shapes.Utils;
 
 namespace ShapeTests;
@@ -16,7 +16,7 @@ public class CircleTests
     [TestCase(0)]
     [TestCase(-0.123)]
     [TestCase(-100)]
-    public void Circle—onstructor_NotPositiveLength_ArgumentException(double radius)
+    public void CircleConstructor_NotPositiveLength_ArgumentException(double radius)
     {
         Assert.Throws<ArgumentException>(() => new Circle(_validator, radius));
     }

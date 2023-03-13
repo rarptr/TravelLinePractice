@@ -1,4 +1,4 @@
-using Shapes;
+Ôªøusing Shapes;
 using Shapes.Utils;
 using System.ComponentModel.DataAnnotations;
 
@@ -17,7 +17,7 @@ public class SquareTests
     [TestCase(0)]
     [TestCase(-0.123)]
     [TestCase(-100)]
-    public void Square—onstructor_NotPositiveLength_ArgumentException(double sideLength)
+    public void SquareConstructor_NotPositiveLength_ArgumentException(double sideLength)
     {
         Assert.Throws<ArgumentException>(() => new Square(_validator, sideLength));
     }

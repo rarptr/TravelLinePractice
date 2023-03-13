@@ -1,4 +1,4 @@
-using Shapes;
+Ôªøusing Shapes;
 using Shapes.Utils;
 
 namespace ShapeTests;
@@ -16,7 +16,7 @@ public class TriangleTests
     [TestCase(-1, 0, 2)]
     [TestCase(0, -0.123, 10)]
     [TestCase(-100, 122, -1)]
-    public void Triangle—onstructor_NotPositiveLengths_ArgumentException(double a, double b, double c)
+    public void TriangleConstructor_NotPositiveLengths_ArgumentException(double a, double b, double c)
     {
         Assert.Throws<ArgumentException>(() => new Triangle(_validator, a, b, c));
     }
@@ -24,7 +24,7 @@ public class TriangleTests
     [TestCase(10.2, 5.1, 5.1)]
     [TestCase(12, 5, 5)]
     [TestCase(0.01, 0.02, 1)]
-    public void Triangle—onstructor_InvalidLengths_ArgumentException(double a, double b, double c)
+    public void TriangleConstructor_InvalidLengths_ArgumentException(double a, double b, double c)
     {
         Assert.Throws<ArgumentException>(() => new Triangle(_validator, a, b, c));
     }

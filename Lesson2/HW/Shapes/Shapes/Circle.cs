@@ -14,6 +14,7 @@ public class Circle : IShape
     private readonly double _radius;
 
     public double Radius { get { return _radius; } }
+
     public Circle(ShapeValidator validator, double radius)
     {
         _validator = validator;
